@@ -1,0 +1,205 @@
+[{
+    "img_ids": [
+        "150362343-9f900db9-cc5b-4a05-b7df-54141fe46518.jpg",
+        "150362339-ad62c425-281e-4319-9642-8f4beb3173ea.jpg",
+        "150362341-11a58931-d04d-43f2-9ee6-a1d2fe760790.jpg",
+        "150362345-8f10eda8-219e-437f-98e5-660f340e5e53.jpg"
+    ],
+    "title": "Arduino EFIS",
+    "description": "An electronic instrument display for my X-Plane 11 sim.",
+    "slug": "efis",
+    "sections" : [
+        ["What is it?", "This is an electronic instrument display for my home flight sim written in C++. It shows basic attitude, altitude, airspeed, heading, vertical speed, and slip degrees. It also has a small menu that allows for the color of certain elements to be changed. I was inspired to make this by the Garmin G5."],
+        ["How does it work?", "First, an X-Plane 11 plug-in I made reads datarefs and sends them via Serial to an Arduino microcontroller. The Arduino then receives the data, and draws the necessary elements on the screen. The biggest challenge was getting it to run smooth enough for it to be useable. The AVR Arduino Mega only runs at 16mhz, but the display I was using was 480p. This meant I had to write as few pixels as I possibly could. In order to do this, I would store the position of old elements, then only write over that area."]
+    ],
+    "categories" : ["cplusplus", "arduino"],
+    "source" : "ArduinoEFIS"
+},
+{
+    "img_ids": [
+        "150368026-b428f70d-b07e-4149-b2f0-f90d5a2ac58c.png",
+        "150368029-7f9d23ea-34cb-4d38-bdcd-045102078c5b.png"
+    ],
+    "title": "AHCCS Attendance Calculator",
+    "description": "A desktop application designed to help teachers calculate class attendance.",
+    "slug": "attendance-calculator",
+    "sections" : [
+        ["What is it?", "This is a desktop application designed for Achievement House Cyber Charter School. It is able to take a large amount of live-class reports, then calculate attendance scores for the students. These scores can be calculated per quarter, and are adjusted based on excused absences. The calculator also displays a graph to view trends in student attendance."],
+        ["How would it be used?", "First, a teacher would import their Blackboard Collaborate class reports. These are just CSV files. The calculator then iterates through the files and calculates the attendance grades. If the teacher has excused days for a student, they can add those to the students total."],
+        ["How does it work?", "This application is written in C++. It uses the raylib library to handle the OpenGL graphics. I also used raygui (an external raylib module) to create many of the UI elements in the application."],
+        ["What did I learn?", "I wanted to make this application as easy for other developers to build and use as possible. Because, of this, I choose to use CMake. This was my first time using CMake on a large project, so I had to learn things such as, how to include/build other libraries and generate a release. Visit the project on github below to see how there are only a few steps to get it built. In addition to this, I worked with teachers, faculty, and administrators, to make sure that the calculator had the features they needed. I also learned concepts of intuitive design and color choice, to make sure it was both easy to use, and aesthetically pleasing."]
+    ],
+    "categories" : ["cplusplus"],
+    "source" : "AHCCS-Attendance-Calculator"
+},
+{
+    "img_ids": [
+        "150368286-d1983cd8-58ac-43de-b69e-1fd5f38f0b31.png",
+        "150368288-58ce523d-c9e0-4704-9c37-038c8558e857.png",
+        "150368289-ec85fa1a-a2cc-40c9-b84c-8ed9ac5558b4.png"
+    ],
+    "title": "Project Part Picker",
+    "description": "A web app made with Python and Flask to plan and budget my projects.",
+    "slug": "project-part-picker",
+    "sections" : [
+        ["What is it?", "When I plan projects, I usually use a spreadsheet for parts and prices. To share the spreadsheet, I would share the file. This lead to problems as sometimes the people I sent it to didn't have the most up-to-date version. In order to fix this problem, I created a webapp that lists my project ideas, and their parts. It incorporates all of the CRUD operations as you can add, view, update, and remove projects/parts."],
+        ["What did I learn?", "This is written in Python and uses the Flask web framework. I had never used Flask before and thought this would be a great project to learn it. Flask also uses the Jinja templating engine. I really liked Jinja as it allowed me to easily create reusable page templates."]
+    ],
+    "categories" : ["python", "flask"],
+    "source" : "project-part-picker"
+},
+{
+    "img_ids": ["150379615-c9bcf87a-15a6-41b7-a64a-6a928429696b.png"],
+    "title": "Kindle Engine Monitor",
+    "description": "This is an electronic engine monitor for my home flight sim written in C++.",
+    "slug": "kindle-engine-monitor",
+    "sections" : [
+        ["What is it?", "This is an electronic engine monitor for my home flight sim written in C++. For the display, I repurposed an old Amazon kindle fire. When creating the application, I based it on the JPI Engine Monitors. It provides information on the airplane's engine such as RPM, Manifold Pressure, Various Temperatures, and more."],
+        ["How does it work?", "To get the data, I wrote an X-Plane plugin that reads datarefs, and sends them to the application. This is done with shared memory via the Win32 API. I used an app called Spacedesk to connect the kindle to my computer as another monitor. Then I was able to create an application with C++ that would display the data. It uses raylib to create these graphics with OpenGL."]
+    ],
+    "categories": ["cplusplus"],
+    "source" : "kindle-edm"
+},
+{
+    "img_ids": [
+        "152649846-b84133cb-ab64-4ce3-bdbd-b8e063d61c72.jpg",
+        "150383141-d1fa30b5-4b13-4396-846c-a2a67e6dfd74.jpg",
+        "150383139-6379e0af-09c0-4a63-ae89-ecea99c87cec.png"
+    ],
+    "title": "Custom IR Remote",
+    "description": "One remote that replaces all of my other IR remotes.",
+    "slug": "custom-ir-remote",
+    "sections" : [
+        ["What is it?", "After becoming annoyed with the large number of remotes I had, I wanted to make a better solution. I decided to use an Arduino Nano, and an IR emitter to replace the other remotes. To show the different devices and functions available, I use a small OLED display. To interact with the remote, I used a small joystick. Compared to a TV's 4 button system, I found this joystick to be much better at navigating the menus."],
+        ["How was it made?", "I designed the body of this remote in Fusion 360. I wanted to be able to open the remote easily in the future, so I needed a secure and strong way of fastening the two halves. I decided to use tapped holes and M3 screws. These were suprisingly strong and the entire remote feels very sturdy for a 3D printed part."],
+        ["How does it work?", "To get the IR hex codes on the existing remotes, I used an IR reciever. Once I had these codes, I could copy them to the Arduino. Because of the low amount of memory on an Arduino Nano, these codes have to be stored in flash storage. Whenever you select a device and option, the Arduino sends that corresponding code with the IR Emitter using the IRremote Library"]
+    ],
+    "categories": ["arduino", "engineering"],
+    "source" : "custom-ir-remote" 
+},
+{
+    "img_ids": [
+        "150383917-b8e6ad06-48d2-40d6-bef0-1340cc966255.png",
+        "150383924-a6394616-dc74-4704-a5ee-93196646199a.jpg",
+        "150383923-f5986927-e78a-4ff9-8a4f-dd54fbafa46a.png"
+    ],
+    "title": "Esports Discord Bot",
+    "description": "A discord bot design to automate an Esports Team Development server.",
+    "slug": "esports-discord-bot",
+    "sections" : [
+        ["What is it?", "This is a discord bot that was designed to help the Anarachy (Now Elventus) Esports Team Development Organization with server automation. The scrim-scheduler part of the bot allows teams to easily find other teams and schedule a scrimmage match. Picture 1 is the available scrims menu. This is where team captains can send invites to other team captains. Each team then receives the invite in their matches menu (picture 2). The bot also automates role assign (picture 3) and helps with repetitve tasks such as adding teams or players. As of now (June 2021) this bot is still actively working on their server."],
+        ["How does it work?", "This bot is written in Python. It uses the discord.py API wrapper to interface with the discord API. To store data such as scrim-invites and scheduled-matches, it uses an SQLite database. It is hosted on a Digital Ocean Droplet."],
+        ["What did I learn?", "I worked with another developer on this project. It was great to have someone to discuss ideas and solutions. We used Git to keep everything organized, and it helped both of us work on the project. During this time, I learned common practices regarding branching and naming schemes. I also started focusing on how to write code that could be easily understood and worked on by another developer."]
+    ],
+    "categories": ["python", "digital-ocean"],
+    "source" : "Elventus-Esports-Bot"
+},
+{
+    "img_ids": [
+        "150392393-8b34f9ea-82c2-4dd0-bc19-7039f2883278.jpg",
+        "150391758-37d5794b-6cf1-4f00-bc2d-cb48647d4b80.png",
+        "150391760-88341b0d-2524-432d-976f-a5df0a069fda.png",
+        "150391761-8cf57d4c-0605-44bd-9548-0a12571553de.png"
+    ],
+    "title": "Puzzle Cutter F360 Add-in",
+    "description": "A Fusion 360 add-in that creates a profile to cut a face into puzzle pieces.",
+    "slug": "puzzle-cutter",
+    "sections" : [
+        ["What is it?", "This is an add-in for Fusion 360 that turns your model into a puzzle. I wanted the puzzles to be 3D printable, so I added adjustable tolerance and piece size (picture 4). I created this for two main reasons. First, I really wanted to try out the Fusion 360 API. As soon as I learned about add-ins and scripts, I really wanted to create one of my own. Second, I wanted a quick, easy, and repeatable way for anyone to turn their model in to a puzzle."],
+        ["How does it work?", "As I mentioned, this add-in uses the Fusion 360 API to interface with Fusion 360. When a person runs the script, they are able to select a face and preview what the puzzle will look like. After adjusting their values, the script generates an SVG file containing the profile of the puzzle. It then places this SVG on the selected face so the person can select and cut the profile from their model."]
+    ],
+    "categories": ["cplusplus"],
+    "source" : "F360-Puzzle-Cutter"
+},
+{
+    "img_ids": ["150392400-bf85fb01-9357-4c2c-adeb-fb82adc92488.png"],
+    "title": "Weather Display",
+    "description": "An always-on display that provides weather data for a selected area.",
+    "slug": "weather-display",
+    "sections" : [
+        ["What is it?", "This is an always-on display that provides weather data for my local area. It runs on a Raspberry Pi and old monitor I had. It is written in Python and uses libraries like tkinter and matplotlib. To get the data, I am using the Open Weather Map API. I created this display so that I would have a quick and easy way to get the information I needed to plan my day."],
+        ["How does it work?", "Every 5 minutes, the OWM Onecall API is called. This provides all of the weather data for the entire display. The display then formats all of the data, and displays it on the screen for the user. The three graphs are generated by Matplotlib as PNG images. These images are then displayed using tkinter. For daily and hourly data, there are rotating displays. These are next to the brief hourly and daily overviews. In the image, they are currently on 1:00 and 12/17. Every few seconds, it rotates to a new hour or day to provide a more detailed forecast."]
+    ],
+    "categories": ["python"],
+    "source" : "weather-display" 
+},
+{
+    "img_ids": [
+        "150392657-39c45186-b021-4961-a9ca-e0314619d0ae.JPG",
+        "150392651-42be1f3f-b4b6-4aaf-bd98-ffd37b679105.JPG",
+        "150392645-70e8071c-0354-494d-9bd4-8a8ef81fcff9.JPG",
+        "150392662-aeb5ec01-6931-4fe8-a47d-cd1bbabfab4e.jpeg"
+    ],
+    "title": "Total Gym Weight Calculator",
+    "description": "This is a device that calculates how much weight you are lifting on a Total Gym.",
+    "slug": "total-gym-calculator",
+    "sections" : [
+        ["What is it?", "When I was using our Total Gym (See picture 4 if you have never seen a Total Gym) I wondered how much weight I was actually lifting. I decided I would make this calculator so my family and I could find the weight at different levels. To calculate this, it just needs two values. First you input your body weight (Red Light), then input your incline level (Blue Light). It will calculate how much weight you are lifting (neglecting friction), then show it on the display (Green Light)."],
+        ["What did I learn?", "This is written in C and only uses the AVR Libc library. The main reason I choose to make this physical calculator, and not just an app, was because I wanted to try using this library. In order to make this work, I had to interact with the ATmega328p at a low level. This means I learned how to set bits in the registers manually, and worked with devices like the Analog to Digital converter."]
+    ],
+    "categories": ["c"],
+    "source" : "total-gym-calculator"
+},
+{
+    "img_ids": [
+        "150393373-a8a4a1d2-962a-4f48-813b-9841a9dd5cde.png",
+        "150393117-8bcbd3e6-2d57-469c-bd47-412c814c411c.png",
+        "150393118-cdad9a90-1300-42d0-a207-e510a3b69583.png",
+        "150393119-73393387-7de5-486f-a027-871f92aeabcf.png"
+    ],
+    "title": "3x3 Sliding Number Puzzle Solver",
+    "description": "This is a simple to use program that returns the best possible solution to a 3x3 sliding number puzzle.",
+    "slug": "sliding-puzzle-solver",
+    "sections" : [
+        ["What is it?", "This is a 3x3 sliding number puzzle solver. If you have never seen one of these puzzles, look at the second picture. There are 8 numbers and your goal is to put them in order by sliding them. If you would like to try one, go here.It is made to be easy to use and return the best possible solution to the puzzle. Simply insert the numbers from your puzzle (as shown in picture 2 and 3), then click 'Find Solution' to get a solution (picture 4)."],
+        ["How does it work", "The search algorithm I chose to use was A*. At first, I tried BFS, but in some situations, it was too slow. I used a very simple heuristic function that was based on the number of tiles (numbers) in the correct spot. For the UI, I am using tkinter."]
+    ],
+    "categories": ["python"],
+    "source" : "3x3Number_Puzzle_Solver"
+},
+{
+    "img_ids": [
+        "150393393-a2248d99-28e5-4bfd-8ce0-9d60faac23c6.jpg",
+        "150393392-260ebb9f-7719-41d6-9f26-91117156d070.png"
+    ],
+    "title": "3D Printed Mechanical Pencil",
+    "description": "A customized fully functional mechanical pencil.",
+    "slug": "mechanical-pencil",
+    "sections" : [
+        ["What is it?", "After dropping and breaking another one of favorite mechanical pencils, I decided I wanted to make my own. This would allow me to manufacture extra parts, and customize it to exactly how I like. For example, my final favorite design has an 11mm casing, and a knurled grip. It is fully 3d printed, takes 0.7mm lead, and only needs a small amount of post-print work to make it functional."],
+        ["How does it work?", "Unlike most mechanical pencils, this one uses a screw mechanism to push the lead. The dial at the top uses a shaft to turn a screw. This screw moves downward pushing the lead. I choose this mechanism because as I feel like it allows better control of the length of lead extruding. The biggest flaw of this design is that you can only have one stick of lead in at a time."]
+    ],
+    "categories": ["engineering"],
+    "source" : ""
+},
+{
+    "img_ids": [
+        "150393416-d71c7f2b-96e3-4652-87be-5e9d50e764f4.png",
+        "150393419-eea5d15f-6654-4872-a0cc-ef29242f3203.png",
+        "150393420-24e8b362-3f92-4716-a526-f1d72f73107a.png"
+    ],
+    "title": "LOLStats",
+    "description": "A League of Legends chat bot that allows coaches to easily get statistics on a player.",
+    "slug": "lolstats",
+    "sections" : [
+        ["What is it?", "A League of Legends Esports coach reached out to me asking if I could create an easy way for them to gather statistics on their players. I created LOLStats, a chat bot that would allow them to gather the information they needed. I choose to make it a discord bot because then they could use it on any of their devices. Some of the functionality that the bot has includes: calculating of averages over a certain number of games, viewing statististics for a specific game, and sorting by champions. This program proved to be a huge help to the coach as before, they would have to check each game individually and average it out themselves."],
+        ["How does it work?", "Riot, the company that developed League of Legends, provides access to the data used in this bot via the Riot API. The bot simply provides an interface to this API."]
+    ],
+    "categories": ["python"],
+    "source" : "LOLStats"
+},
+{
+    "img_ids": [
+        "150394314-083754de-16ee-453f-b323-9eb9fd14f773.png",
+        "150394322-a9b934ac-9a1b-4781-a713-e9c19ea5197c.jpg"
+    ],
+    "title": "Mamod TE1A CAD Model",
+    "description": "This is the Mamod TE1A model steam traction engine designed in Fusion 360.",
+    "slug": "te1a-model",
+    "sections" : [
+        ["What is it?", "The Mamod TE1A is a model steam traction engine. It works similarly to a steam train as the water in the boiler gets heated up to produce steam. The steam is then used to power the oscillating steam piston. I designed it in Fusion 360 mostly for practice, but also so that I could animate and move different parts."]
+    ],
+    "categories": ["engineering"],
+    "source" : ""
+}
+]
