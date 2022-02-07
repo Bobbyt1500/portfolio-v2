@@ -12,16 +12,23 @@ export default class Projects extends React.Component {
             "js" : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
             "flask" : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
             "digital-ocean" : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg",
-            "c" : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+            "c" : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+            "express" : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+            "mongodb" : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg",
+            "html" : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+            "css" : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+            "bootstrap" : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+            "php" : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg",
+            "wordpress" : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
         }
 
-        this.whiteIcons = new Set(["flask"])  
+        this.whiteIcons = new Set(["flask", "express", "wordpress"])  
 
         this.filters = {
             "All" : new Set([]),
             "C/C++" : new Set(["cplusplus", "c"]),
             "Python" : new Set(["python"]),
-            "JS/Web" : new Set(["js", "flask"]),
+            "JS/Web" : new Set(["js", "flask", "html", "php", "wordpress"]),
             "Engineering" : new Set(["engineering", "arduino"])
         }
 
