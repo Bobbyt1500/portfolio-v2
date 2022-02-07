@@ -57,7 +57,7 @@ var Projects = function (_React$Component) {
     }, {
         key: "filterPressed",
         value: function filterPressed(e) {
-            this.setState({ selectedFilters: $(e.target).attr("data-filter") });
+            this.setState({ numLoaded: 6, selectedFilters: $(e.target).attr("data-filter") });
         }
     }, {
         key: "getFilters",

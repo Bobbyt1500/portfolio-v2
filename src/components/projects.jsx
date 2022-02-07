@@ -41,7 +41,7 @@ export default class Projects extends React.Component {
     }
 
     filterPressed(e) {
-       this.setState({selectedFilters: $(e.target).attr("data-filter")})
+       this.setState({numLoaded: 6, selectedFilters: $(e.target).attr("data-filter")})
     }
 
     getFilters() {
