@@ -65,7 +65,7 @@ var Projects = function (_React$Component) {
 
                 buttons.push(React.createElement(
                     "button",
-                    { className: "btn btn-lg btn-custom-outline" + extraClasses, onClick: this.filterPressed, "data-filter": key },
+                    { className: "btn btn-filter btn-custom-outline" + extraClasses, onClick: this.filterPressed, "data-filter": key },
                     key
                 ));
             }
@@ -201,8 +201,6 @@ var Projects = function (_React$Component) {
     }, {
         key: "render",
         value: function render() {
-
-            console.log(this.getFilteredData());
 
             return React.createElement(
                 "div",

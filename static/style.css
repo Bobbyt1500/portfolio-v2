@@ -81,16 +81,12 @@ body {
     transition: all .4s ease-in-out;
 }
 
-.btn-filter {
-    color: white;
-    background-color: #07aaf0;
-    border: none;
-}
-
-.btn-filter:hover {
-    color: white;
-    background-color: #0071a5;
-    border: none;
+@media (min-width: 992px) {
+    .btn-filter {
+        padding: .5rem 1rem;
+        font-size: 1.25rem;
+        border-radius: .3rem;
+    }
 }
 
 .btn-filter-active {

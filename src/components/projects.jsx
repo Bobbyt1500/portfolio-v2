@@ -47,7 +47,7 @@ export default class Projects extends React.Component {
             }
 
             buttons.push(
-                <button className={"btn btn-lg btn-custom-outline" + extraClasses} onClick={this.filterPressed} data-filter={key}>
+                <button className={"btn btn-filter btn-custom-outline" + extraClasses} onClick={this.filterPressed} data-filter={key}>
                     {key}
                 </button>               
             )
@@ -152,8 +152,6 @@ export default class Projects extends React.Component {
     }
 
     render() {
-
-        console.log(this.getFilteredData())
        
         return (
             <div id="projectCards">
