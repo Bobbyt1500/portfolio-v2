@@ -13,7 +13,7 @@ export default class App extends React.Component {
 
     componentDidMount() {
         // Fetch the data on the projects
-        fetch("/static/projects.json")
+        fetch("/projects.json")
         .then((res) => res.json())
         .then((data) => {
             this.setState({data : data})
@@ -22,7 +22,7 @@ export default class App extends React.Component {
 
     showModal(project) {
         $("#modalCarousel").carousel(0)
-        
+
         // Show the modal with the project data that matches the slug
         this.setState({modalData : project}, () => {
             $('#modal').modal('show')

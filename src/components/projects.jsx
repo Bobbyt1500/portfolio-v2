@@ -87,7 +87,6 @@ export default class Projects extends React.Component {
 
         // Get Icons
         let icons = []
-        console.log(project)
         for (let k = 0; k < project["categories"].length; ++k) {
             let category = project["categories"][k]
             // Add Icon
