@@ -29,7 +29,7 @@ var App = function (_React$Component) {
             var _this2 = this;
 
             // Fetch the data on the projects
-            fetch("/static/projects.json").then(function (res) {
+            fetch("/projects.json").then(function (res) {
                 return res.json();
             }).then(function (data) {
                 _this2.setState({ data: data });

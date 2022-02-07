@@ -111,7 +111,6 @@ var Projects = function (_React$Component) {
 
             // Get Icons
             var icons = [];
-            console.log(project);
             for (var k = 0; k < project["categories"].length; ++k) {
                 var category = project["categories"][k];
                 // Add Icon

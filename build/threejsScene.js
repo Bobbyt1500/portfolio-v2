@@ -17,11 +17,13 @@ var SceneController = function () {
         this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
         this.element.append(this.renderer.domElement);
 
-        this.sizex = this.element.innerWidth() <= 1200 ? 7 : 10;
-        this.sizey = this.element.innerWidth() <= 1200 ? 7 : 10;
+        var isMobileWidth = this.element.innerWidth() <= 1200;
+
+        this.sizex = isMobileWidth ? 7 : 10;
+        this.sizey = isMobileWidth ? 7 : 10;
 
         this.balls = [];
-        this.numballs = 8;
+        this.numballs = isMobileWidth ? 5 : 8;
 
         // Setup Camera and Scene
         this.initScene();
