@@ -42,6 +42,11 @@ export default class Modal extends React.Component {
                                 <i class="devicon-github-original colored"></i>  View Source
                             </button>
                         )}
+                        {( modalData.link != null &&
+                            <button className="btn btn-custom" onClick={() => {window.location = modalData.link}}>
+                                View
+                            </button>
+                        )}
                         
                     </div>
 

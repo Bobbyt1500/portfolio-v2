@@ -31,7 +31,9 @@ var Projects = function (_React$Component) {
             "css": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
             "bootstrap": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
             "php": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg",
-            "wordpress": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
+            "wordpress": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
+            "django": "https://static.djangoproject.com/img/logos/django-logo-negative.svg",
+            "postgres": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
         };
 
         _this.whiteIcons = new Set(["flask", "express", "wordpress"]);

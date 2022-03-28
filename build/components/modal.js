@@ -68,6 +68,13 @@ var Modal = function (_React$Component) {
                                 } },
                             React.createElement("i", { "class": "devicon-github-original colored" }),
                             "  View Source"
+                        ),
+                        modalData.link != null && React.createElement(
+                            "button",
+                            { className: "btn btn-custom", onClick: function onClick() {
+                                    window.location = modalData.link;
+                                } },
+                            "View"
                         )
                     ),
                     React.createElement(

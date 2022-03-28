@@ -7,7 +7,6 @@
     ],
     "title": "Arduino EFIS",
     "description": "An electronic instrument display for my X-Plane 11 sim.",
-    "slug": "efis",
     "sections" : [
         ["What is it?", "This is an electronic instrument display for my home flight sim written in C++. It shows basic attitude, altitude, airspeed, heading, vertical speed, and slip degrees. It also has a small menu that allows for the color of certain elements to be changed. I was inspired to make this by the Garmin G5."],
         ["How does it work?", "First, an X-Plane 11 plug-in I made reads datarefs and sends them via Serial to an Arduino microcontroller. The Arduino then receives the data, and draws the necessary elements on the screen. The biggest challenge was getting it to run smooth enough for it to be useable. The AVR Arduino Mega only runs at 16mhz, but the display I was using was 480p. This meant I had to write as few pixels as I possibly could. In order to do this, I would store the position of old elements, then only write over that area."]
@@ -17,12 +16,25 @@
 },
 {
     "img_ids": [
+        "160499168-412cef2a-4b00-4a8d-8130-43c4a5030716.png",
+        "160499166-cc649b6b-7b89-4421-ac1f-308c915a54cf.png"
+    ],
+    "title": "ATL-JDM Website",
+    "description": "From 2020 - present I have been doing full-stack web development for ATL-JDM.",
+    "sections" : [
+        ["What did I do?", "From 2020 - present I have been doing full-stack web development for ATL-JDM. I built the backend of ATL-JDM's website using Django. It uses a PostgreSQL database for things like the inventory. The frontend of the website is built using Bootstrap and jQuery. One major component is the interactive Custom-Order form so customers can place orders for specific vehicles. I also wrote utilities/scripts to generate social media posts, automate backups, convert/resize images, and more."]
+    ],
+    "categories": ["python", "django", "postgres", "bootstrap"],
+    "source" : "",
+    "link" : "https://atl-jdm.com"
+},
+{
+    "img_ids": [
         "150368026-b428f70d-b07e-4149-b2f0-f90d5a2ac58c.png",
         "150368029-7f9d23ea-34cb-4d38-bdcd-045102078c5b.png"
     ],
     "title": "AHCCS Attendance Calculator",
     "description": "A desktop application designed to help teachers calculate class attendance.",
-    "slug": "attendance-calculator",
     "sections" : [
         ["What is it?", "This is a desktop application designed for Achievement House Cyber Charter School. It is able to take a large amount of live-class reports, then calculate attendance scores for the students. These scores can be calculated per quarter, and are adjusted based on excused absences. The calculator also displays a graph to view trends in student attendance."],
         ["How would it be used?", "First, a teacher would import their Blackboard Collaborate class reports. These are just CSV files. The calculator then iterates through the files and calculates the attendance grades. If the teacher has excused days for a student, they can add those to the students total."],
@@ -38,7 +50,6 @@
     ],
     "title": "Allergy-Safe Recipe Finder",
     "description": "A web application to search allergy-safe recipes from the Spoonacular API",
-    "slug": "recipe-finder",
     "sections" : [
         ["What is it?", "This is a web application made with a NodeJS (Express) backend and a React frontend. It uses the Spoonacular API to find recipes that don’t contain the selected allergens.  Once you find a recipe you like, the view button takes you to the Spoonacular page where you can view more information about that recipe."],
         ["What did I learn?", "This was my first time using JSX and the Babel compiler. I really enjoyed using it and was surprised by how much easier it made developing the frontend."]
@@ -53,7 +64,6 @@
     ],
     "title": "Remote Sensor Monitor",
     "description": "A system made with Python for Baba's Brew Kombucha Brewery to monitor sensors and send alerts when something goes wrong.",
-    "slug": "remote-sensor-monitor",
     "sections" : [
         ["What is it?", "This is a system made for Baba's Brew Kombucha Brewery that monitors sensors and sends email alerts. Some of the ways it is used include monitoring for leaks, and ensuring refrigerators are working. It has a web interface to adjust alert bounds and display the last received readings. There is also a graph to view trends over time."],
         ["How does it work?", "The sensors wirelessly report to a receiver on an interval. This receiver communicates with a server via serial. Using pySerial, I read and log the values, checking if an alert needs to be sent. A Flask web server provides the web interface so sensor info can be added and changed. I also used Google Charts to create the graphs."]
@@ -65,7 +75,6 @@
     "img_ids": ["150379615-c9bcf87a-15a6-41b7-a64a-6a928429696b.png"],
     "title": "Kindle Engine Monitor",
     "description": "This is an electronic engine monitor for my home flight sim written in C++.",
-    "slug": "kindle-engine-monitor",
     "sections" : [
         ["What is it?", "This is an electronic engine monitor for my home flight sim written in C++. For the display, I repurposed an old Amazon kindle fire. When creating the application, I based it on the JPI Engine Monitors. It provides information on the airplane's engine such as RPM, Manifold Pressure, Various Temperatures, and more."],
         ["How does it work?", "To get the data, I wrote an X-Plane plugin that reads datarefs, and sends them to the application. This is done with shared memory via the Win32 API. I used an app called Spacedesk to connect the kindle to my computer as another monitor. Then I was able to create an application with C++ that would display the data. It uses raylib to create these graphics with OpenGL."]
@@ -81,7 +90,6 @@
     ],
     "title": "Custom IR Remote",
     "description": "One remote that replaces all of my other IR remotes.",
-    "slug": "custom-ir-remote",
     "sections" : [
         ["What is it?", "After becoming annoyed with the large number of remotes I had, I wanted to make a better solution. I decided to use an Arduino Nano, and an IR emitter to replace the other remotes. To show the different devices and functions available, I use a small OLED display. To interact with the remote, I used a small joystick. Compared to a TV's 4 button system, I found this joystick to be much better at navigating the menus."],
         ["How was it made?", "I designed the body of this remote in Fusion 360. I wanted to be able to open the remote easily in the future, so I needed a secure and strong way of fastening the two halves. I decided to use tapped holes and M3 screws. These were suprisingly strong and the entire remote feels very sturdy for a 3D printed part."],
@@ -98,7 +106,6 @@
     ],
     "title": "Esports Discord Bot",
     "description": "A discord bot design to automate an Esports Team Development server.",
-    "slug": "esports-discord-bot",
     "sections" : [
         ["What is it?", "This is a discord bot that was designed to help the Anarachy (Now Elventus) Esports Team Development Organization with server automation. The scrim-scheduler part of the bot allows teams to easily find other teams and schedule a scrimmage match. Picture 1 is the available scrims menu. This is where team captains can send invites to other team captains. Each team then receives the invite in their matches menu (picture 2). The bot also automates role assign (picture 3) and helps with repetitve tasks such as adding teams or players. As of now (June 2021) this bot is still actively working on their server."],
         ["How does it work?", "This bot is written in Python. It uses the discord.py API wrapper to interface with the discord API. To store data such as scrim-invites and scheduled-matches, it uses an SQLite database. It is hosted on a Digital Ocean Droplet."],
@@ -115,7 +122,6 @@
     ],
     "title": "Project Part Picker",
     "description": "A web app made with Python and Flask to plan and budget my projects.",
-    "slug": "project-part-picker",
     "sections" : [
         ["What is it?", "When I plan projects, I usually use a spreadsheet for parts and prices. To share the spreadsheet, I would share the file. This lead to problems as sometimes the people I sent it to didn't have the most up-to-date version. In order to fix this problem, I created a webapp that lists my project ideas, and their parts. It uses MongoDB to store data, and incorporates all of the CRUD operations as you can add, view, update, and remove projects/parts."],
         ["What did I learn?", "This is written in Python and uses the Flask web framework. I had never used Flask before and thought this would be a great project to learn it. Flask also uses the Jinja templating engine. I really liked Jinja as it allowed me to easily create reusable page templates."]
@@ -132,7 +138,6 @@
     ],
     "title": "Puzzle Cutter F360 Add-in",
     "description": "A Fusion 360 add-in that creates a profile to cut a face into puzzle pieces.",
-    "slug": "puzzle-cutter",
     "sections" : [
         ["What is it?", "This is an add-in for Fusion 360 that turns your model into a puzzle. I wanted the puzzles to be 3D printable, so I added adjustable tolerance and piece size (picture 4). I created this for two main reasons. First, I really wanted to try out the Fusion 360 API. As soon as I learned about add-ins and scripts, I really wanted to create one of my own. Second, I wanted a quick, easy, and repeatable way for anyone to turn their model in to a puzzle."],
         ["How does it work?", "As I mentioned, this add-in uses the Fusion 360 API to interface with Fusion 360. When a person runs the script, they are able to select a face and preview what the puzzle will look like. After adjusting their values, the script generates an SVG file containing the profile of the puzzle. It then places this SVG on the selected face so the person can select and cut the profile from their model."]
@@ -142,25 +147,10 @@
 },
 {
     "img_ids": [
-        "152852828-ee652593-8640-4a36-8f50-ebd517884da7.png"
-    ],
-    "title": "ATL-JDM Website",
-    "description": "From 2020 - Present I have been doing basic website development for ATL-JDM.",
-    "slug": "cs50ai",
-    "sections" : [
-        ["What did I do?", "ATL-JDM's website (atl-jdm.com) was setup with Wordpress and a basic theme. They hired me to improve SEO, optimize the site, and create/modify different web elements. During my time working on the website, I have not only improved the appearance and organization of the site, but also greatly improved the amount of traffic."],
-        ["What Did I learn?", "I used mostly HTML, PHP, and CSS when modifying the Wordpress themes and plugins. I hadn't used PHP or Wordpress before this, so it was very fun to get to learn them."]
-    ],
-    "categories": ["wordpress", "php", "html", "css"],
-    "source" : ""
-},
-{
-    "img_ids": [
         "152852081-6705acec-8313-4b85-83e4-9bcb73e981e5.png"
     ],
     "title": "Harvard CS50AI 2020",
     "description": "This certification is from a free online course by Harvard called: Introduction to Artificial Intelligence with Python",
-    "slug": "cs50ai",
     "sections" : [
         ["What did I learn", "In this course, I learned about the different types of problems that can be solved using artificial intelligence. There were 12 projects including game playing AI (Such as Tic-Tac-Toe and Minesweeper), and problem solving AI (Such as Image detection and language processing). In the projects, I gained experience using libraries such as TensorFlow, OpenCV, scikit-learn, and NLTK. I also worked with many different types of algorithms including search algorithms and page ranking algorithms."]
     ],
@@ -176,7 +166,6 @@
     ],
     "title": "Total Gym Weight Calculator",
     "description": "This is a device that calculates how much weight you are lifting on a Total Gym.",
-    "slug": "total-gym-calculator",
     "sections" : [
         ["What is it?", "When I was using our Total Gym (See picture 4 if you have never seen a Total Gym) I wondered how much weight I was actually lifting. I decided I would make this calculator so my family and I could find the weight at different levels. To calculate this, it just needs two values. First you input your body weight (Red Light), then input your incline level (Blue Light). It will calculate how much weight you are lifting (neglecting friction), then show it on the display (Green Light)."],
         ["What did I learn?", "This is written in C and only uses the AVR Libc library. The main reason I choose to make this physical calculator, and not just an app, was because I wanted to try using this library. In order to make this work, I had to interact with the ATmega328p at a low level. This means I learned how to set bits in the registers manually, and worked with devices like the Analog to Digital converter."]
@@ -193,7 +182,6 @@
     ],
     "title": "3x3 Sliding Number Puzzle Solver",
     "description": "This is a simple to use program that returns the best possible solution to a 3x3 sliding number puzzle.",
-    "slug": "sliding-puzzle-solver",
     "sections" : [
         ["What is it?", "This is a 3x3 sliding number puzzle solver. If you have never seen one of these puzzles, look at the second picture. There are 8 numbers and your goal is to put them in order by sliding them. If you would like to try one, go here.It is made to be easy to use and return the best possible solution to the puzzle. Simply insert the numbers from your puzzle (as shown in picture 2 and 3), then click 'Find Solution' to get a solution (picture 4)."],
         ["How does it work", "The search algorithm I chose to use was A*. At first, I tried BFS, but in some situations, it was too slow. I used a very simple heuristic function that was based on the number of tiles (numbers) in the correct spot. For the UI, I am using tkinter."]
@@ -205,7 +193,6 @@
     "img_ids": ["150392400-bf85fb01-9357-4c2c-adeb-fb82adc92488.png"],
     "title": "Weather Display",
     "description": "An always-on display that provides weather data for a selected area.",
-    "slug": "weather-display",
     "sections" : [
         ["What is it?", "This is an always-on display that provides weather data for my local area. It runs on a Raspberry Pi and old monitor I had. It is written in Python and uses libraries like tkinter and matplotlib. To get the data, I am using the Open Weather Map API. I created this display so that I would have a quick and easy way to get the information I needed to plan my day."],
         ["How does it work?", "Every 5 minutes, the OWM Onecall API is called. This provides all of the weather data for the entire display. The display then formats all of the data, and displays it on the screen for the user. The three graphs are generated by Matplotlib as PNG images. These images are then displayed using tkinter. For daily and hourly data, there are rotating displays. These are next to the brief hourly and daily overviews. In the image, they are currently on 1:00 and 12/17. Every few seconds, it rotates to a new hour or day to provide a more detailed forecast."]
@@ -220,7 +207,6 @@
     ],
     "title": "3D Printed Mechanical Pencil",
     "description": "A customized fully functional mechanical pencil.",
-    "slug": "mechanical-pencil",
     "sections" : [
         ["What is it?", "After dropping and breaking another one of favorite mechanical pencils, I decided I wanted to make my own. This would allow me to manufacture extra parts, and customize it to exactly how I like. For example, my final favorite design has an 11mm casing, and a knurled grip. It is fully 3d printed, takes 0.7mm lead, and only needs a small amount of post-print work to make it functional."],
         ["How does it work?", "Unlike most mechanical pencils, this one uses a screw mechanism to push the lead. The dial at the top uses a shaft to turn a screw. This screw moves downward pushing the lead. I choose this mechanism because as I feel like it allows better control of the length of lead extruding. The biggest flaw of this design is that you can only have one stick of lead in at a time."]
@@ -236,7 +222,6 @@
     ],
     "title": "LOLStats",
     "description": "A League of Legends chat bot that allows coaches to easily get statistics on a player.",
-    "slug": "lolstats",
     "sections" : [
         ["What is it?", "A League of Legends Esports coach reached out to me asking if I could create an easy way for them to gather statistics on their players. I created LOLStats, a chat bot that would allow them to gather the information they needed. I choose to make it a discord bot because then they could use it on any of their devices. Some of the functionality that the bot has includes: calculating of averages over a certain number of games, viewing statististics for a specific game, and sorting by champions. This program proved to be a huge help to the coach as before, they would have to check each game individually and average it out themselves."],
         ["How does it work?", "Riot, the company that developed League of Legends, provides access to the data used in this bot via the Riot API. The bot simply provides an interface to this API."]
@@ -251,7 +236,6 @@
     ],
     "title": "Mamod TE1A CAD Model",
     "description": "This is the Mamod TE1A model steam traction engine designed in Fusion 360.",
-    "slug": "te1a-model",
     "sections" : [
         ["What is it?", "The Mamod TE1A is a model steam traction engine. It works similarly to a steam train as the water in the boiler gets heated up to produce steam. The steam is then used to power the oscillating steam piston. I designed it in Fusion 360 mostly for practice, but also so that I could animate and move different parts."]
     ],
