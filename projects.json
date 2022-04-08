@@ -22,7 +22,7 @@
     "title": "ATL-JDM Website",
     "description": "From 2020 - present I have been doing full-stack web development for ATL-JDM.",
     "sections" : [
-        ["What did I do?", "From 2020 - present I have been doing full-stack web development for ATL-JDM. I built the backend of ATL-JDM's website using Django. It uses a PostgreSQL database for things like the inventory. The frontend of the website is built using Bootstrap and jQuery. One major component is the interactive Custom-Order form so customers can place orders for specific vehicles. I also wrote utilities/scripts to generate social media posts, automate backups, convert/resize images, and more."]
+        ["What did I do?", "From 2020 - present I have been doing full-stack web development for ATL-JDM. I built the backend of ATL-JDM's website using Django. It uses a PostgreSQL database for the inventory system. The frontend of the website is built using Bootstrap and jQuery. One major component is the interactive Custom-Order form so customers can place orders for specific vehicles. I also wrote utilities/scripts to generate social media posts, automate backups, convert/resize images, and more."]
     ],
     "categories": ["python", "django", "postgres", "bootstrap"],
     "source" : "",

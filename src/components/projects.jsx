@@ -30,7 +30,7 @@ export default class Projects extends React.Component {
             "All" : new Set([]),
             "C/C++" : new Set(["cplusplus", "c"]),
             "Python" : new Set(["python"]),
-            "JS/Web" : new Set(["js", "flask", "html", "php", "wordpress"]),
+            "JS/Web" : new Set(["js", "flask", "html", "php", "wordpress", "django"]),
             "Engineering" : new Set(["engineering", "arduino"])
         }
 
