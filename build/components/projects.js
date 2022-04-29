@@ -42,7 +42,8 @@ var Projects = function (_React$Component) {
             "All": new Set([]),
             "C/C++": new Set(["cplusplus", "c"]),
             "Python": new Set(["python"]),
-            "JS/Web": new Set(["js", "flask", "html", "php", "wordpress"]),
+            "JS/TS": new Set(["js", "react", "express"]),
+            "Web": new Set(["js", "flask", "html", "php", "django", "wordpress"]),
             "Engineering": new Set(["engineering", "arduino"])
         };
 
