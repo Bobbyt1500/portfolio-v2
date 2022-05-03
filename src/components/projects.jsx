@@ -32,7 +32,7 @@ export default class Projects extends React.Component {
             "Python" : new Set(["python"]),
             "JS/TS" : new Set(["js", "react", "express"]),
             "Web" : new Set(["js", "flask", "html", "php", "django", "wordpress"]),
-            "Engineering" : new Set(["engineering", "arduino"])
+            "Engineering" : new Set(["engineering", "arduino"]),
         }
 
         this.loadMore = this.loadMore.bind(this)
@@ -57,7 +57,7 @@ export default class Projects extends React.Component {
             }
 
             buttons.push(
-                <button className={"btn btn-filter btn-custom-outline" + extraClasses} onClick={this.filterPressed} data-filter={key}>
+                <button className={"btn btn-filter m-1 btn-custom-outline" + extraClasses} onClick={this.filterPressed} data-filter={key}>
                     {key}
                 </button>               
             )
@@ -66,7 +66,7 @@ export default class Projects extends React.Component {
         return (
             <div className="row">
                 <div className="col d-flex justify-content-center align-items-center">
-                    <div className="btn-group my-5">
+                    <div className="d-flex my-5 flex-wrap justify-content-center">
                         {buttons}
                     </div>
                 </div>

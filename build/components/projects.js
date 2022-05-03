@@ -75,7 +75,7 @@ var Projects = function (_React$Component) {
 
                 buttons.push(React.createElement(
                     "button",
-                    { className: "btn btn-filter btn-custom-outline" + extraClasses, onClick: this.filterPressed, "data-filter": key },
+                    { className: "btn btn-filter m-1 btn-custom-outline" + extraClasses, onClick: this.filterPressed, "data-filter": key },
                     key
                 ));
             }
@@ -88,7 +88,7 @@ var Projects = function (_React$Component) {
                     { className: "col d-flex justify-content-center align-items-center" },
                     React.createElement(
                         "div",
-                        { className: "btn-group my-5" },
+                        { className: "d-flex my-5 flex-wrap justify-content-center" },
                         buttons
                     )
                 )
