@@ -247,6 +247,20 @@
 },
 {
     "img_ids": [
+        "167130287-384d5c2e-27a0-4001-a9f2-b26b6919402a.png",
+        "167130300-d642432f-3f1a-461e-a985-4b3d947dbd8e.png"
+    ],
+    "title": "3D Printed Ukulele",
+    "description": "A 3D Printable Ukulele body designed for the AHCCS IED class.",
+    "sections" : [
+        ["What is it?", "This is a 3D Printable Ukulele body that I made for the AHCCS Intro to Engineering Design course. The students in the course follow along with a video of me buiding it, and get to make their own ukuleles. I designed the body of it in Fusion 360. The neck, strings, bridge, and other parts are from a DIY Ukulele kit."],
+        ["How is it made?", "After designing it in Fusion 360, it is 3d printed with wood infused PLA. There are two parts to the ukulele body. The top plate, and the bottom. The bottom has eight threaded inserts around the edge that are heat set into the PLA. The top plate screws into the bottom using countersunk screws. The bridge and neck are attached with bolts."]
+    ],
+    "categories": ["engineering"],
+    "source" : ""
+},
+{
+    "img_ids": [
         "150393416-d71c7f2b-96e3-4652-87be-5e9d50e764f4.png",
         "150393419-eea5d15f-6654-4872-a0cc-ef29242f3203.png",
         "150393420-24e8b362-3f92-4716-a526-f1d72f73107a.png"
