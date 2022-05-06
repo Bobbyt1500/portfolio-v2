@@ -115,7 +115,7 @@ export default class Projects extends React.Component {
         return (
             <div className="col-lg-4 my-3">
                 <div className="card my-2">
-                    <img src={"https://user-images.githubusercontent.com/62358060/" + project["img_ids"][0]} className="card-img-top" />
+                    <img src={"https://user-images.githubusercontent.com/62358060/" + project["img_ids"][0]} className="img-fluid img-top" />
                     
                     <div className="card-body">
                         <h5 className="card-title">{project["title"]}</h5>

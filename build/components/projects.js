@@ -142,7 +142,7 @@ var Projects = function (_React$Component) {
                 React.createElement(
                     "div",
                     { className: "card my-2" },
-                    React.createElement("img", { src: "https://user-images.githubusercontent.com/62358060/" + project["img_ids"][0], className: "card-img-top" }),
+                    React.createElement("img", { src: "https://user-images.githubusercontent.com/62358060/" + project["img_ids"][0], className: "img-fluid img-top" }),
                     React.createElement(
                         "div",
                         { className: "card-body" },
