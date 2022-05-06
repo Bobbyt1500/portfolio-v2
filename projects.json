@@ -30,6 +30,21 @@
 },
 {
     "img_ids": [
+        "167045054-41827dcd-db2f-4fcb-b31d-b185420d87b1.png",
+        "167045061-46f65f5c-1d99-41d2-a1aa-c9deb89099ca.png"
+    ],
+    "title": "Language Book",
+    "description": "Language Book is a Visual Studio Code extension that allows you to write and practice vocab in a Notebook interface.",
+    "sections" : [
+        ["What is it?", "Often when practicing Japanese vocabulary, I would write down words, definitions, and pronunciations in a text file. After entering all these words, I wanted an easy way to generate flash cards or a quiz to help me memorize them. This is when I came up with the idea for Language Book. Its a VSCode Notebook Extension that allows you to enter different vocab words, pronunciations, definitions, and sentences. Then, using this inputted data, it will automatically generate a quiz. There is also a list of the inputted lines where you can hover over words and sentences to view their pronunciation and definition, similar to a flashcard."],
+        ["How does it work?", "This is an extension for VSCode, an open source text-editor by Microsoft that supports a feature they call Notebooks. Notebooks can have markdown text, and code segments where you can input code, data, or other instructions that the notebook can parse. My extension adds a custom notebook type, and a renderer for it. You enter in the vocab/sentences in a specific syntax that allows the notebook to know which word corresponds to which definition and pronunciation. The renderer then renders the output in the notebook, and creates elements like the interactive quiz."],
+        ["What technologies does it use?", "The extension and renderer are build with Typescript (the preferred langauge for building VSCode Extensions). It uses Preact (a lighter-weight alternative to ReactJS) and JSX to build the rendered components. To build and bundle the extension, I used webpack."]
+    ],
+    "categories": ["ts", "react", "webpack"],
+    "source" : "lang-book"
+},
+{
+    "img_ids": [
         "150368026-b428f70d-b07e-4149-b2f0-f90d5a2ac58c.png",
         "166081848-da461ec5-b30a-4259-87e7-9f5b89c83cbe.png",
         "150368029-7f9d23ea-34cb-4d38-bdcd-045102078c5b.png"
@@ -173,6 +188,21 @@
     ],
     "categories": ["c", "engineering"],
     "source" : "total-gym-calculator"
+},
+{
+    "img_ids": [
+        "167051484-d3dbf42b-39f1-4a32-b933-435b5c5e169e.png",
+        "167051483-21a7a23b-0fb3-4442-a89c-fca52f3b6d68.png"
+    ],
+    "title": "Ore Generator Minecraft Mod",
+    "description": "This is a Minecraft mod built with Fabric that adds new types of cobblestone generators",
+    "sections" : [
+        ["What is it?", "This is a Minecraft Mod that adds new types of cobblestone generators to the game. It allows you to generate Iron, Gold, and Diamonds using a new Cobble Ore. You can craft an ore-infused fluid using water and the resource you want to generate. Then you can make a renewable cobblestone generator just as you would in normal Minecraft. When the ore-infused fluid comes in contact with lava, it generates this new Cobble Ore."],
+        ["How did we build it?", "I built this mod with another developer and an artist. I made the fluids and cobble-ore generation part of the mod, and the other developer worked on recipes, the cobble ores, and their drops. We used Git and GitHub to collaborate and track our changes. It was really fun to get to work on this project with others."],
+        ["Why did we create it?", "We wanted to create a Minecraft mod to try out the Fabric mod-loader/API. We came up with this simple mechanic/idea for new cobblestone generators, and thought it would be fun to turn it into a reality."]
+    ],
+    "categories": ["java", "git"],
+    "source" : "ore-generator"
 },
 {
     "img_ids": [
