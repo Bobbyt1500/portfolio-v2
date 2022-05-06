@@ -14,7 +14,7 @@ var Projects = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this, props));
 
-        _this.state = { numLoaded: 6, selectedFilters: "All" };
+        _this.state = { numLoaded: 9, selectedFilters: "All" };
 
         _this.iconSources = {
             "cplusplus": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
@@ -33,7 +33,12 @@ var Projects = function (_React$Component) {
             "php": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg",
             "wordpress": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
             "django": "https://static.djangoproject.com/img/logos/django-logo-negative.svg",
-            "postgres": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+            "postgres": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+            "ts": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+            "vscode": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg",
+            "webpack": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
+            "java": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg",
+            "git": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
         };
 
         _this.whiteIcons = new Set(["flask", "express", "wordpress"]);
@@ -43,7 +48,7 @@ var Projects = function (_React$Component) {
             "C/C++": new Set(["cplusplus", "c"]),
             "Python": new Set(["python"]),
             "JS/TS": new Set(["js", "react", "express"]),
-            "Web": new Set(["js", "flask", "html", "php", "django", "wordpress"]),
+            "Java": new Set(["java"]),
             "Engineering": new Set(["engineering", "arduino"])
         };
 
@@ -55,12 +60,12 @@ var Projects = function (_React$Component) {
     _createClass(Projects, [{
         key: "loadMore",
         value: function loadMore() {
-            this.setState({ numLoaded: this.state.numLoaded + 6 });
+            this.setState({ numLoaded: this.state.numLoaded + 9 });
         }
     }, {
         key: "filterPressed",
         value: function filterPressed(e) {
-            this.setState({ numLoaded: 6, selectedFilters: $(e.target).attr("data-filter") });
+            this.setState({ numLoaded: 9, selectedFilters: $(e.target).attr("data-filter") });
         }
     }, {
         key: "getFilters",
