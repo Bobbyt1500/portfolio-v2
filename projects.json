@@ -74,6 +74,17 @@
     "source" : "allergy-safe-recipe-finder"
 },
 {
+    "img_ids": ["150379615-c9bcf87a-15a6-41b7-a64a-6a928429696b.png"],
+    "title": "Kindle Engine Monitor",
+    "description": "This is an electronic engine monitor for my home flight sim written in C++.",
+    "sections" : [
+        ["What is it?", "This is an electronic engine monitor for my home flight sim written in C++. For the display, I repurposed an old Amazon kindle fire. When creating the application, I based it on the JPI Engine Monitors. It provides information on the airplane's engine such as RPM, Manifold Pressure, Various Temperatures, and more."],
+        ["How does it work?", "To get the data, I wrote an X-Plane plugin that reads datarefs, and sends them to the application. This is done with shared memory via the Win32 API. I used an app called Spacedesk to connect the kindle to my computer as another monitor. Then I was able to create an application with C++ that would display the data. It uses raylib to create these graphics with OpenGL."]
+    ],
+    "categories": ["cplusplus"],
+    "source" : "kindle-edm"
+},
+{
     "img_ids": [
         "152842305-e0bf84c2-ff50-43e6-b4ac-901aee13f091.png",
         "152842309-aea0b940-d592-48f3-928c-08089c0ca760.png"
@@ -86,17 +97,6 @@
     ],
     "categories" : ["python", "flask", "html"],
     "source" : ""
-},
-{
-    "img_ids": ["150379615-c9bcf87a-15a6-41b7-a64a-6a928429696b.png"],
-    "title": "Kindle Engine Monitor",
-    "description": "This is an electronic engine monitor for my home flight sim written in C++.",
-    "sections" : [
-        ["What is it?", "This is an electronic engine monitor for my home flight sim written in C++. For the display, I repurposed an old Amazon kindle fire. When creating the application, I based it on the JPI Engine Monitors. It provides information on the airplane's engine such as RPM, Manifold Pressure, Various Temperatures, and more."],
-        ["How does it work?", "To get the data, I wrote an X-Plane plugin that reads datarefs, and sends them to the application. This is done with shared memory via the Win32 API. I used an app called Spacedesk to connect the kindle to my computer as another monitor. Then I was able to create an application with C++ that would display the data. It uses raylib to create these graphics with OpenGL."]
-    ],
-    "categories": ["cplusplus"],
-    "source" : "kindle-edm"
 },
 {
     "img_ids": [
