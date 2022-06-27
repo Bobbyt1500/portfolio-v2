@@ -3,14 +3,22 @@
 	"tasks": [
 		{
 			"type": "npm",
-			"script": "watch",
+			"script": "build",
 			"group": {
 				"kind": "build",
 				"isDefault": true
 			},
 			"problemMatcher": [],
+			"label": "npm: build",
+			"detail": "webpack"
+		},
+		{
+			"type": "npm",
+			"script": "watch",
+			"group": "build",
+			"problemMatcher": [],
 			"label": "npm: watch",
-			"detail": "npx babel --watch src --out-dir build --presets react-app/prod"
+			"detail": "webpack --watch"
 		}
 	]
 }

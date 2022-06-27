@@ -1,5 +1,7 @@
-import Projects from "./components/projects.js"
-import Modal from "./components/modal.js"
+import React from "react"
+
+import Projects from "./components/projects.jsx"
+import Modal from "./components/modal.jsx"
 
 export default class App extends React.Component {
 
@@ -13,7 +15,7 @@ export default class App extends React.Component {
 
     componentDidMount() {
         // Fetch the data on the projects
-        fetch("/projects.json")
+        fetch("/static/projects.json")
         .then((res) => res.json())
         .then((data) => {
             this.setState({data : data})
@@ -45,7 +47,7 @@ export default class App extends React.Component {
                                     <a onClick={() => {
                                         $('html').animate({
                                             scrollTop: $("#projectCards").offset().top
-                                        }, 1500);
+                                        }, 1000);
                                     }} className="btn btn-custom btn-lg mt-3">My Projects</a>
                                 </div>
                             </div>

@@ -1,4 +1,5 @@
-
+import * as THREE from "three"
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 
 export default class SceneController {
     constructor() {
@@ -103,7 +104,7 @@ export default class SceneController {
         // Dark, bright
         let colors = [[0x001163, 0x0021bf], [0x822900, 0xdb4500], [0x570600, 0xd10e00], [0x0f2b00, 0x3fb500], [0x850066, 0x9c008c], [0x7a5a00, 0xff7700], [0x003261, 0x00a2ff]]
 
-        let loader = new THREE.GLTFLoader()
+        let loader = new GLTFLoader()
 
         for (var i = 0; i < this.numballs; ++i) {
             let color = colors[this.getRandomInt(0, colors.length)]
