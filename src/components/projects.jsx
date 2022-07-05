@@ -171,12 +171,12 @@ export default class Projects extends React.Component {
     render() {
        
         return (
-            <div id="projectCards">
+            <div id="projectCards" className="mb-5">
                 {this.getFilters()}
 
                 {this.getCards()}
                 
-                {this.state.numLoaded < this.getFilteredData().length && <button type="button" className="btn btn-lg my-5 btn-block btn-custom-outline" id="seeMore" onClick={this.loadMore}>See More</button>}
+                {this.state.numLoaded < this.getFilteredData().length && <button type="button" className="btn btn-lg mt-5 btn-block btn-custom-outline" id="seeMore" onClick={this.loadMore}>See More</button>}
                 
             </div>
         );
