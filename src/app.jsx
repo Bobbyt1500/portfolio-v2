@@ -70,9 +70,9 @@ export default class App extends React.Component {
                     <div className="row">
                         <div className="col">
                             <div className="d-flex flex-column align-items-center justify-content-center m-5">
-                                <div className="mb-3">
-                                    <button className="btn-custom icon-btn mx-2" onClick={() => {window.location = "https://www.linkedin.com/in/robert-thierry-3405a4243/"}}><i class="fa-brands fa-linkedin"></i></button>
-                                    <button className="btn-custom icon-btn mx-2" onClick={() => {window.location = "https://github.com/Bobbyt1500"}}><i class="fa-brands fa-github"></i></button>
+                                <div className="mb-3 d-flex">
+                                    <button className="btn-custom icon-btn mx-2 d-flex align-items-center justify-content-center" onClick={() => {window.location = "https://www.linkedin.com/in/robert-thierry-3405a4243/"}}><i class="fa-brands fa-linkedin"></i></button>
+                                    <button className="btn-custom icon-btn mx-2 d-flex align-items-center justify-content-center" onClick={() => {window.location = "https://github.com/Bobbyt1500"}}><i class="fa-brands fa-github"></i></button>
                                 </div>
                                 <span className="align-middle"><i class="fa-solid fa-mobile-screen-button icon-color"></i> 610-314-6692</span>
                                 <span className="align-middle"><i class="fa-solid fa-envelope icon-color"></i> bthierry1500@gmail.com</span>
