@@ -90,9 +90,9 @@
         "152842309-aea0b940-d592-48f3-928c-08089c0ca760.png"
     ],
     "title": "Remote Sensor Monitor",
-    "description": "A system made with Python for Baba's Brew Kombucha Brewery to monitor sensors and send alerts when something goes wrong.",
+    "description": "A system made with Python for a bottling factory to monitor sensors and send alerts when something goes wrong.",
     "sections" : [
-        ["What is it?", "This is a system made for Baba's Brew Kombucha Brewery that monitors sensors and sends email alerts. Some of the ways it is used include monitoring for leaks, and ensuring refrigerators are working. It has a web interface to adjust alert bounds and display the last received readings. There is also a graph to view trends over time."],
+        ["What is it?", "This is a system made for a bottling factory that monitors sensors and sends email alerts. Some of the ways it is used include monitoring for leaks, and ensuring refrigerators are working. It has a web interface to adjust alert bounds and display the last received readings. There is also a graph to view trends over time."],
         ["How does it work?", "The sensors wirelessly report to a receiver on an interval. This receiver communicates with a server via serial. Using pySerial, I read and log the values, checking if an alert needs to be sent. A Flask web server provides the web interface so sensor info can be added and changed. I also used Google Charts to create the graphs."]
     ],
     "categories" : ["python", "flask", "html"],
